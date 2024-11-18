@@ -180,3 +180,16 @@ function demSoSanh() {
     }
     getElement('txtCompare').innerHTML = result
 }
+document.onkeydown = function (e) {
+    e = e || window.event;
+
+    if (
+        e.keyCode === 123 ||
+        (e.ctrlKey && e.shiftKey && e.keyCode === 73) ||
+        (e.ctrlKey && e.keyCode === 85)
+
+    ) {
+        e.preventDefault();
+        return false;
+    }
+}
