@@ -180,7 +180,9 @@ function demSoSanh() {
     }
     getElement('txtCompare').innerHTML = result
 }
-document.onkeydown = function (e) {
+document.addEventListener("contextmenu", function (n) {
+    n.preventDefault()
+}, !1), document.onkeydown = function (e) {
     e = e || window.event;
 
     if (
